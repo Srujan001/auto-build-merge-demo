@@ -1,0 +1,21 @@
+{
+  "name": "autobuild-automerge-demo",
+  "version": "1.0.0",
+  "description": "Demo project with auto-build and auto-merge capabilities",
+  "main": "src/main.js",
+  "scripts": {
+    "build": "echo 'Building project...'",
+    "test": "jest",
+    "start": "node src/main.js"
+  },
+  "keywords": [
+    "github-actions",
+    "automerge",
+    "ci-cd"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^29.5.0"
+  }
+}
