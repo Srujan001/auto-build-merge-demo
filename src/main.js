@@ -19,3 +19,15 @@ if (require.main === module) {
   console.log('Hello from the example project!');
   console.log(`2 + 3 = ${add(2, 3)}`);
 }
+
+// Add this after the existing functions
+function multiply(a, b) {
+  return a * b;
+}
+
+// Update the exports to include the new function
+module.exports = {
+  add,
+  subtract,
+  multiply
+};

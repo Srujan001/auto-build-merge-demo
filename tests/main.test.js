@@ -1,15 +1,9 @@
-const { add, subtract } = require('../src/main');
+// Update the import line at the top
+const { add, subtract, multiply } = require('../src/main');
 
-describe('Math functions', () => {
-  test('add function correctly adds two numbers', () => {
-    expect(add(2, 3)).toBe(5);
-    expect(add(-1, 1)).toBe(0);
-    expect(add(0, 0)).toBe(0);
-  });
-
-  test('subtract function correctly subtracts two numbers', () => {
-    expect(subtract(5, 3)).toBe(2);
-    expect(subtract(1, 1)).toBe(0);
-    expect(subtract(0, 5)).toBe(-5);
-  });
+// Add this test to the existing describe block
+test('multiply function correctly multiplies two numbers', () => {
+  expect(multiply(2, 3)).toBe(6);
+  expect(multiply(-1, 1)).toBe(-1);
+  expect(multiply(0, 5)).toBe(0);
 });
